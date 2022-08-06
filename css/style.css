@@ -1,0 +1,172 @@
+/* GENERAL STYLES */
+html, body {
+    height: 100%;
+}
+
+body{
+    min-width: 360px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+/* !HEADER STYLES */
+header {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+#header-navbar {
+    border-radius: 0;
+    border: 0;
+    background-color: black;
+    padding: 10px 30px;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 3em;
+    color: white !important;
+    margin-right: 30px;
+    text-shadow: 3px 3px 0px rgb(24, 73, 39),
+                    -3px -3px 0px rgb(197, 200, 21);
+    transition: 0.3s text-shadow linear;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 0px rgb(72, 255, 0),
+                    0px 0px 0px rgb(255, 0, 153);
+}
+
+#toggle-btn {
+    position: relative;
+    margin-top: -40px;
+    clear: both;
+    border: 2px solid white;
+    background: linear-gradient(45deg, rgb(25, 25, 66), rgb(61, 207, 28));
+}
+
+.icon-bar {
+    border: 1px solid white;
+    height: 2px !important;
+}
+
+#navbar-collapsable {
+    text-align: center;
+    margin: 0 -45px;
+    position: relative;
+    bottom: -10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar-collapsable a {
+    color: white;
+    font-size: 1.5em;
+    transition: 0.1s all linear;
+}
+
+#navbar-collapsable a:hover {
+    color: rgb(194, 128, 255);
+    font-size: 1.6em;
+}
+
+#navbar-collapsable li:hover {
+    border: 1px solid white;
+    background-color: #555;
+}
+
+#navbar-collapsable ul {
+    list-style: none;
+}
+
+/* !MAIN STYLES */
+main {
+    margin-top: 50px;
+}
+.title {
+    font-weight: bold;
+    font-size: 4em;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    margin-bottom: 25px;
+    padding: 0 15px;
+}
+
+.menu-item-content {
+    border: 1px solid gray;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+.menu-item-title {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.menu-item-description {
+    padding: 10px;
+    font-size: 1.3em;
+    color: #eee;
+}
+
+.back-to-top {
+    padding: 10px;
+    margin: 5px auto;
+    display: block;
+    width: 120px;
+    background-color: #ccc;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+}
+
+.back-to-top:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* !FOOTER STYLES */
+
+footer {
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    background-color: gray;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+/* MEDIA */
+@media (min-width: 768px) {
+    #navbar-collapsable {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #navbar-collapsable {
+        background-color: gray;
+    }
+}
